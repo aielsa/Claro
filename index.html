@@ -66,7 +66,7 @@ a{text-decoration:none;color:inherit}
 
 /* === HERO — FULL BLEED IMAGE === */
 .hero{position:relative;overflow:hidden;background:var(--claro-red)}
-.hero-img{width:100%;height:auto;display:block;object-fit:cover;object-position:top center}
+.hero-img{width:100%;height:100%;display:block;object-fit:cover;object-position:top center}
 .hero-img-desktop{display:block}
 .hero-img-mobile{display:none}
 .hero-overlay{position:absolute;bottom:0;left:0;right:0;padding:32px 48px;z-index:2;display:flex;align-items:center;gap:16px;background:linear-gradient(180deg,transparent,rgba(13,13,13,.6) 70%,rgba(13,13,13,.85))}
@@ -362,6 +362,8 @@ svg.world-map{width:100%;height:auto;display:block;position:relative;z-index:1}
   /* Hero */
   .hero-img-desktop{display:none}
   .hero-img-mobile{display:block}
+  .hero{min-height:85vh}
+  .hero-img{object-position:center 30%}
   .hero-overlay{padding:16px 20px;flex-direction:column;align-items:flex-start;gap:6px}
   .hero-overlay-label{font-size:9px;padding:6px 14px;letter-spacing:.1em}
   .hero-overlay-sub{font-size:11px}
@@ -411,14 +413,15 @@ svg.world-map{width:100%;height:auto;display:block;position:relative;z-index:1}
   .grid-bg{display:none}
   .label-box rect{rx:3}
   .testimonials-grid{grid-template-columns:1fr!important;max-width:500px;margin-left:auto;margin-right:auto}
-  .event-cards-row{grid-template-columns:repeat(2,1fr);gap:16px;max-width:500px;margin:32px auto 0}
+  .event-cards-row{grid-template-columns:1fr!important;gap:16px;max-width:400px;margin:32px auto 0}
   .ev-card-logo{width:100%;height:100%;padding:12px 16px}
+  .ev-card-logo-wrap{aspect-ratio:2/1}
   .label-box{display:none}
   .title-main,.title-sub{display:none}
   .travel-strip{grid-template-columns:1fr;max-width:400px;margin:40px auto 0}
   /* Reels */
-  .reels-grid{grid-template-columns:repeat(3,1fr);gap:12px}
-  .phone-row{grid-template-columns:repeat(3,1fr);max-width:100%;gap:12px}
+  .reels-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .phone-row{grid-template-columns:repeat(2,1fr);max-width:100%;gap:12px}
   .phone-mockup{border-radius:18px;padding:5px}
   .phone-notch{width:50px;height:14px}
   .phone-screen{border-radius:14px}
@@ -1524,15 +1527,15 @@ svg.world-map{width:100%;height:auto;display:block;position:relative;z-index:1}
     <p style="text-align:center;color:rgba(255,255,255,.4);font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-top:56px;margin-bottom:16px" class="f">Experiencia internacional comprobada</p>
     <div class="travel-strip f">
       <div class="travel-strip-item">
-        <img src="Fotos Elsa viajando/IMG_5128.JPG" alt="Neuromarketing World Forum">
+        <img src="assets-claro/travel-la.jpg" alt="Neuromarketing World Forum">
         <div class="travel-strip-label">Neuromarketing World Forum &mdash; Los Angeles 2024</div>
       </div>
       <div class="travel-strip-item">
-        <img src="Fotos Elsa viajando/IMG_0981.jpg" alt="Web Summit Lisboa">
+        <img src="assets-claro/travel-lisboa.jpg" alt="Web Summit Lisboa">
         <div class="travel-strip-label">Web Summit 2023 &mdash; Lisboa</div>
       </div>
       <div class="travel-strip-item">
-        <img src="Fotos Elsa viajando/IMG_9493.jpg" alt="Neuromarketing World Forum">
+        <img src="assets-claro/travel-berlin.jpg" alt="Neuromarketing World Forum">
         <div class="travel-strip-label">Neuromarketing World Forum &mdash; Berl&iacute;n 2023</div>
       </div>
     </div>
